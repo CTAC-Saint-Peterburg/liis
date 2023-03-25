@@ -7,7 +7,14 @@ import { Carousel } from "../components/Carousel";
 import { Hotel } from "../components/Hotel";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 export default function MainPage() {
+  let go = useNavigate();
+  useEffect(() => {
+    if (localStorage.length === 0) {
+      go("/signin");
+    }
+  }, []);
   let url = useSelector((state) => state.urlforfetch.url);
   const getFavs = useSelector((state) => state.favourites.data);
   const [incomeData, setIncomeData] = useState([]);

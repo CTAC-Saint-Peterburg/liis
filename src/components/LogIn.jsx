@@ -12,7 +12,8 @@ export const LogIn = () => {
   function submitData(e) {
     e.preventDefault();
     if (login && password) {
-      go("/main");
+      localStorage.setItem("login", "true");
+      go("/");
     }
   }
   return (

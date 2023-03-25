@@ -6,7 +6,9 @@ export const RightRowHeader = () => {
       <h1>Отели</h1>
       <img src={vector} alt=">" />
       <h1>Москва</h1>
-      <h3>07 июля 2020</h3>
+      <h3>
+        {new Date().getDate()} марта {new Date().getFullYear()}
+      </h3>
     </div>
   );
 };

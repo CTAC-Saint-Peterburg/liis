@@ -27,6 +27,7 @@
   gap: 12px;
   width: 83px;
   height: 24px;
+  cursor: pointer;
 }
 .exitButton > span {
   width: 47px;

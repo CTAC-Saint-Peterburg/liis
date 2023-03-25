@@ -1,0 +1,17 @@
+.carousel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 32px 0px 32px;
+  width: 600px;
+  height: 149px;
+  gap: 12px;
+  overflow: hidden;
+}
+.carouselUnit {
+  position: relative;
+  margin: 0 0 0 0;
+  min-width: 164px;
+  height: 149px;
+  border-radius: 10px;
+}

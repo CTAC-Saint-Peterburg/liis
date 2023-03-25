@@ -1,0 +1,38 @@
+.rightRowHeader {
+  position: relative;
+  margin: 48px 32px 28px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rightRowHeader > h1 {
+  position: relative;
+  margin: 0 0 0 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  color: #424242;
+}
+.rightRowHeader > h3 {
+  position: relative;
+  margin: 0 0 0 0;
+  display: flex;
+  width: 100%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  align-items: center;
+  text-align: right;
+  color: #41522e;
+  justify-content: flex-end;
+}
+.rightRowHeader > img {
+  position: relative;
+  margin: 0 20px 0px 20px;
+}

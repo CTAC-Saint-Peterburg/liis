@@ -1,0 +1,20 @@
+.main {
+  position: relative;
+  margin: 0 auto;
+  width: 1440px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+  /* border: 1px solid red; */
+  overflow: hidden;
+}
+.backImage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url(./assets/backImg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(50%) blur(10px);
+  object-fit: fill;
+}

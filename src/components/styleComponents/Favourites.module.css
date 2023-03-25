@@ -1,0 +1,193 @@
+.favourites {
+  position: relative;
+  width: 360px;
+  height: 472px;
+  background: #ffffff;
+  box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+}
+.favourites > h2 {
+  margin: 32px 0px 32px 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #424242;
+}
+.filters {
+  position: relative;
+  margin: 0px 0px 32px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+  width: 168px;
+  height: 28px;
+}
+.favouritesUnits {
+  position: relative;
+  margin: 0 0 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 296px;
+  height: 288px;
+  gap: 16px;
+  overflow: overlay;
+}
+.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 4px;
+  width: 89px;
+  background: #ffffff;
+  border: 1px solid #41522e;
+  border-radius: 4px;
+}
+.rating > span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.408px;
+  color: #41522e;
+}
+.prices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 4px;
+  width: 71px;
+  background: #ffffff;
+  border: 1px solid #41522e;
+  border-radius: 4px;
+}
+.prices > span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.408px;
+  color: #41522e;
+}
+.hotel {
+  position: relative;
+  display: flex;
+  width: 296px;
+  height: 74px;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(135, 135, 135, 0.2);
+}
+.hotelImage {
+  position: relative;
+  margin-top: 3px;
+  margin-right: 24px;
+  display: flex;
+  height: 64px;
+  min-width: 64px;
+  border-radius: 50%;
+  background: rgba(65, 82, 46, 0.05);
+  align-items: center;
+  justify-content: center;
+}
+.hotelContent {
+  position: relative;
+  margin: 0 0 0 0;
+  min-width: 211px;
+  height: 67px;
+}
+.hotelContent > h3 {
+  position: relative;
+  margin: 0 0 0 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #424242;
+}
+.hotelContentText {
+  position: relative;
+  display: flex;
+}
+.hotelContentText > p {
+  position: relative;
+  margin: 0 0 0 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #878787;
+}
+.hotelContentText > span {
+  position: relative;
+  margin: 0 10px 0 10px;
+  color: #c4c4c4;
+  border-radius: 2px;
+}
+.hotelStars {
+  position: relative;
+  width: 99px;
+  height: 17px;
+}
+.hotelPriceWrapper {
+  position: relative;
+  height: 100%;
+  width: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.hotelPriceWrapper > img {
+  position: relative;
+  width: 21px;
+  height: 18px;
+  margin-bottom: 22px;
+}
+.hotelPrice {
+  position: relative;
+  margin-bottom: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hotelPrice > p {
+  margin: 0 8px 0 0px;
+  width: 28px;
+  height: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #878787;
+}
+.hotelPrice > span {
+  margin: 0 0 0 0px;
+  width: 71px;
+  height: 21px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: -0.408px;
+  color: #424242;
+}

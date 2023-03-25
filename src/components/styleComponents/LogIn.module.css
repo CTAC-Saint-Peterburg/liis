@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+.main {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  width: 1440px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+  /* border: 1px solid red; */
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.backImage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../assets/backImg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(50%) blur(10px);
+  object-fit: fill;
+}
+.formWrapper {
+  position: relative;
+  width: 409px;
+  height: 382px;
+  background: #ffffff;
+  box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+}
+.formWrapper > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formWrapper > form > h2 {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #424242;
+}
+.formWrapperDiv {
+  display: flex;
+  flex-direction: column;
+  width: 345px;
+}
+.formWrapperDiv > input {
+  width: 345px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #c9cacc;
+  border-radius: 4px;
+}
+.formWrapperDiv > label {
+  margin-top: 24px;
+  margin-bottom: 7px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #424242;
+}
+/* .formWrapper > form > label > input {
+  margin-top: 7px;
+  width: 345px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #c9cacc;
+  border-radius: 4px;
+} */
+.formWrapperButton {
+  margin-top: 32px;
+
+  flex-direction: row;
+  justify-content: center;
+  padding: 7px;
+  gap: 10px;
+  width: 345px;
+  height: 50px;
+  background: linear-gradient(104.34deg, #41522e -15.34%, #be8022 145.95%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}

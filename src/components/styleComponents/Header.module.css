@@ -1,0 +1,44 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.header > h1 {
+  position: relative;
+  margin: 32px 0 32px 31px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #424242;
+}
+.exitButton {
+  position: relative;
+  margin-top: 34px;
+  margin-right: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  width: 83px;
+  height: 24px;
+}
+.exitButton > span {
+  width: 47px;
+  height: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: -0.408px;
+  color: #41522e;
+}

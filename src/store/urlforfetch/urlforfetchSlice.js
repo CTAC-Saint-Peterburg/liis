@@ -3,7 +3,15 @@ import { createSlice } from "@reduxjs/toolkit";
 const urlforfetchSlice = createSlice({
   name: "urlforfetch",
   initialState: {
-    url: `http://engine.hotellook.com/api/v2/cache.json?location=Moscow&currency=rub&checkIn=2023-03-${new Date().getDate()}&checkOut=2023-03-${new Date().getDate()}&limit=10`,
+    url: `http://engine.hotellook.com/api/v2/cache.json?location=Moscow&currency=rub&checkIn=2023-${String(
+      new Date().getMonth() + 1
+    ).padStart(2, "0")}-${String(new Date().getDate()).padStart(
+      2,
+      "0"
+    )}&checkOut=2023-${String(new Date().getMonth() + 1).padStart(
+      2,
+      "0"
+    )}-${String(new Date().getDate()).padStart(2, "0")}&limit=10`,
   },
   reducers: {
     change: (state, action) => {

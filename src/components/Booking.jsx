@@ -3,7 +3,11 @@ import { useDispatch } from "react-redux";
 import { change } from "../store/urlforfetch/urlforfetchSlice";
 import styles from "./styleComponents/Booking.module.css";
 export const Booking = () => {
-  const [inputDate, setInputDate] = useState("");
+  const [inputDate, setInputDate] = useState(
+    `2023-${String(new Date().getMonth() + 1).padStart(2, "0")}-${String(
+      new Date().getDate()
+    ).padStart(2, "0")}`
+  );
   const dispath = useDispatch();
   return (
     <div className={styles.booking}>

@@ -30,7 +30,7 @@ export const Hotel = ({ name, price, id, favs }) => {
       <div className={styles.hotelContent}>
         <h3>{name}</h3>
         <div className={styles.hotelContentText}>
-          <p>7 июля 2020</p>
+          <p>{`${new Date().getDate()} марта 2023`}</p>
           <span>-</span>
           <p>1 день</p>
         </div>

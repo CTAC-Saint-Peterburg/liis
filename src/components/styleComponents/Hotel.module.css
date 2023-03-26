@@ -85,6 +85,9 @@
   margin-bottom: 22px;
   margin-right: 24px;
 }
+.hotelPriceWrapper > img:hover {
+  opacity: 0.3;
+}
 .hotelPrice {
   position: relative;
   display: flex;

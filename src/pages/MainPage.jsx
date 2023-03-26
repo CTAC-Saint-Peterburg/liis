@@ -26,7 +26,7 @@ export default function MainPage() {
       setIncomeData(data);
     };
     fetchData();
-  }, []);
+  }, [url]);
   useEffect(() => {
     if (isLoading) {
       setTimeout(() => {

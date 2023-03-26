@@ -26,6 +26,7 @@
   gap: 8px;
   width: 168px;
   height: 28px;
+  cursor: pointer;
 }
 .favouritesUnits {
   position: relative;
@@ -157,6 +158,9 @@
   width: 21px;
   height: 18px;
   margin-bottom: 22px;
+}
+.hotelPriceWrapper > img:hover {
+  opacity: 0.3;
 }
 .hotelPrice {
   position: relative;

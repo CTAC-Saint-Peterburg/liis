@@ -1,13 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import stars from "../assets/stars.png";
 import favFalse from "../assets/favFalse.svg";
 import favTrue from "../assets/favTrue.svg";
 import styles from "./styleComponents/Favourites.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import imgSelect from "../assets/select.svg";
-import { remove } from "../store/favourites/favouritesSlice";
+import { remove, sort } from "../store/favourites/favouritesSlice";
 export const Favourites = ({ favs }) => {
   const dispath = useDispatch();
+  const [priceFilter, setPriceFilter] = useState(false);
+  function handleSort() {
+    dispath(sort(priceFilter));
+    setPriceFilter(!priceFilter);
+  }
+
   return (
     <div className={styles.favourites}>
       <h2>Избранное</h2>
@@ -16,7 +22,7 @@ export const Favourites = ({ favs }) => {
           <span>Рейтинг</span>
           <img src={imgSelect} alt="" />
         </div>
-        <div className={styles.prices}>
+        <div className={styles.prices} onClick={() => handleSort()}>
           <span>Цена</span>
           <img src={imgSelect} alt="" />
         </div>
@@ -28,7 +34,7 @@ export const Favourites = ({ favs }) => {
               <div className={styles.hotelContent}>
                 <h3>{x.name}</h3>
                 <div className={styles.hotelContentText}>
-                  <p>7 июля 2020</p>
+                  <p>{`${new Date().getDate()} марта 2023`}</p>
                   <span>-</span>
                   <p>1 день</p>
                 </div>

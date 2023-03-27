@@ -6,10 +6,10 @@ import styles from "./styleComponents/Carousel.module.css";
 export const Carousel = () => {
   return (
     <div className={styles.carousel}>
-      <img src={img1} className={styles.carouselUnit}></img>
-      <img src={img2} className={styles.carouselUnit}></img>
-      <img src={img3} className={styles.carouselUnit}></img>
-      <img src={img4} className={styles.carouselUnit}></img>
+      <img src={img1} className={styles.carouselUnit} alt="1"></img>
+      <img src={img2} className={styles.carouselUnit} alt="2"></img>
+      <img src={img3} className={styles.carouselUnit} alt="3"></img>
+      <img src={img4} className={styles.carouselUnit} alt="4"></img>
     </div>
   );
 };

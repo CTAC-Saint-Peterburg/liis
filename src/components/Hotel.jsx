@@ -4,7 +4,7 @@ import stars from "../assets/stars.png";
 import favFalse from "../assets/favFalse.svg";
 import favTrue from "../assets/favTrue.svg";
 import styles from "./styleComponents/Hotel.module.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { add, remove } from "../store/favourites/favouritesSlice";
 export const Hotel = ({ name, price, id, favs }) => {
   const dispath = useDispatch();

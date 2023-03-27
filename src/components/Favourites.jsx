@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import stars from "../assets/stars.png";
 import favFalse from "../assets/favFalse.svg";
 import favTrue from "../assets/favTrue.svg";
 import styles from "./styleComponents/Favourites.module.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import imgSelect from "../assets/select.svg";
 import { remove, sort } from "../store/favourites/favouritesSlice";
 export const Favourites = ({ favs }) => {

@@ -14,7 +14,7 @@ export default function MainPage() {
     if (localStorage.length === 0) {
       go("/signin");
     }
-  }, []);
+  }, [go]);
   let url = useSelector((state) => state.urlforfetch.url);
   const getFavs = useSelector((state) => state.favourites.data);
   const [incomeData, setIncomeData] = useState([]);
@@ -33,7 +33,7 @@ export default function MainPage() {
         setIsloading(false);
       }, 1000);
     }
-  }, [incomeData]);
+  }, [incomeData, isLoading]);
   return (
     <div className={styles.main}>
       <Header />

@@ -34,7 +34,7 @@ export const Booking = () => {
         onClick={() =>
           dispath(
             change(
-              `http://engine.hotellook.com/api/v2/cache.json?location=Moscow&currency=rub&checkIn=${inputDate}&checkOut=${inputDate}&limit=10`
+              `https://engine.hotellook.com/api/v2/cache.json?location=Moscow&currency=rub&checkIn=${inputDate}&checkOut=${inputDate}&limit=10`
             )
           )
         }
